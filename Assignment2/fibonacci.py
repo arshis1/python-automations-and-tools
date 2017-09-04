@@ -6,14 +6,15 @@ class Fibonnaci:
 		else:
 			return Fibonnaci.fib(n-1)+ Fibonnaci.fib(n-2)
 	
-	def main():
+	def main(self):
 		count = 0
 		print("Enter the number of outcomes")
 		count = int(input())
 		print("The", count, "th fibonacci number is :")
-		print(Fibonnaci.fib(count))
+		print(self.fib(count))
 		
 #calling main function in class fibonnaci		
 #if __name__=='__name__':
 print("Calling main")
-a = Fibonnaci.main()
+a = Fibonnaci
+a.main()
