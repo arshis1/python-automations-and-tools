@@ -28,18 +28,18 @@ class Read:
     print("**********************\n")
     print("Now reading file\n")
     f = open(r'''C:\Python31\README.txt''')
-    a.print_file(f)
+    Read.print_file(f)
   
   def print_file(f):
     print("**********************\n")
     print("Display the file\n")
     print(f.read())
   
-  def main():
+  def main(self):
     print("**************************\n")
     print("Inside main\n")
-    a.read_file()
+    Read.read_file()
      
 print("Calling main\n")  
-a = Read
+a = Read()
 a.main()
