@@ -10,10 +10,7 @@ class Pattern:
     return(row*'*')
   
   def p_dlr(row):
-    if row == 1:
-      return(row*'$')
-    else :
-      return((row+row-1)*'$')
+    return((row+row-1)*'$')
       
 a = Pattern()
 a.main()
