@@ -10,6 +10,6 @@ target = 45
 ta1= 3
 ta2 = 101
 
-linear_search(arr,target)
-linear_search(arr,ta1)
-linear_search(arr,ta2)
+print(linear_search(arr,target))
+print(linear_search(arr,ta1))
+print(linear_search(arr,ta2))
