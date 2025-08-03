@@ -17,6 +17,7 @@ class Node:
                 self.rnode = Node(value)
             else:
                 #recurssion
+                print("Right note is not empty and value " ,value, "is greater than surrent right node value:" ,self.value)
                 print("Traversing Right tree for", value)
                 self.rnode.insert(value)
         else:
@@ -25,18 +26,28 @@ class Node:
                 self.lnode = Node(value)
             else:
                 #recussion
+                print("Left note is not empty and value " ,value, "is less than surrent left node value:" ,self.value)
                 print("Traversing Left tree for", value)
                 self.lnode.insert(value)
 
 
+
 if __name__ == "__main__":
+    #create a binary tree:
     lst = [10,5,15,3,7,12,18]
+    new_lst = sorted(lst)
+    print(new_lst)
     root = None
 
-    for input in lst:
+    for input in new_lst:
         if root is None:
             print("RRoot Node Not Found: Inserting ", input)
             root = Node(input)
         else:
             root.insert(input)
+
+    #find in the binary tree:
+
+    #is binary search tree:
+
 
